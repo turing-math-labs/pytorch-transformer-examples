@@ -1,5 +1,7 @@
 # Word-level Language Modeling using RNN and Transformer
 
+This is a fork of this repository: https://github.com/pytorch/examples/tree/main/word_language_model
+
 This example trains a multi-layer RNN (Elman, GRU, or LSTM) or Transformer on a language modeling task. By default, the training script uses the Wikitext-2 dataset, provided.
 The trained model can then be used by the generate script to generate new text.
 
