@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "name": "Biography Task",
+      "entities": [
+        {
+          "name": "Albert Einstein",
+          "birth_date": "14 March 1879",
+          "birth_place": "Ulm"
+        },
+        {
+          "name": "Marie Curie",
+          "birth_date": "7 November 1867",
+          "birth_place": "Warsaw"
+        }
+      ],
+      "templates": [
+        {
+          "T_Q": "When and where was X born?",
+          "T_A": "X was born on X.birth_date in X.birth_place."
+        },
+        {
+          "T_Q": "Where is X from?",
+          "T_A": "X was born in X.birth_place."
+        }
+      ]
+    },
+    {
+      "name": "Element Task",
+      "entities": [
+        {
+          "name": "Gold",
+          "symbol": "Au",
+          "atomic_number": "79"
+        }
+      ],
+      "templates": [
+        {
+          "T_Q": "What is the atomic number and symbol of X?",
+          "T_A": "The atomic number of X is X.atomic_number and its symbol is X.symbol."
+        }
+      ]
+    }
+  ]
+}
