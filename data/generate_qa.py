@@ -2,44 +2,25 @@ import json
 import re
 from typing import Dict, List, Tuple
 
-# D_e maps attribute keys to values
 EntityDict = Dict[str, str]
 
 def realization_operator(template: str, entity: EntityDict) -> str:
-    """
-    Implements Realize(T, D_e) and the substitution function sigma_e.
-    Replaces placeholders like 'X' and 'X.k' with their dictionary values.
-    """
     def substitution_function(match: re.Match) -> str:
-        # match.group(1) captures the 'k' in 'X.k'. If None, the placeholder is 'X'.
         key = match.group(1) 
-        
         if key is None:
-            # sigma_e(X) = D_e(name)
             return entity.get("name", "[MISSING_NAME]")
         else:
-            # sigma_e(X.k) = D_e(k)
             return entity.get(key, f"[MISSING_{key.upper()}]")
             
-    # Regex explanation:
-    # \bX      : Matches 'X' as a whole word
-    # (?:\.    : Starts a non-capturing group for the '.k' part
-    # (\w+)    : Captures the attribute key 'k' (alphanumeric characters and underscores)
-    # )?       : Makes the '.k' part optional
     placeholder_pattern = re.compile(r'\bX(?:\.(\w+))?')
-    
     return placeholder_pattern.sub(substitution_function, template)
 
 def generate_from_json(filepath: str) -> Dict[str, List[Tuple[str, str]]]:
-    """
-    Loads tasks from a JSON file and generates all (q, a) pairs per task.
-    """
     with open(filepath, 'r', encoding='utf-8') as file:
         data = json.load(file)
         
     all_tasks_data = {}
     
-    # Iterate over T
     for task in data.get("tasks", []):
         task_name = task.get("name", "Unnamed Task")
         entities = task.get("entities", [])
@@ -47,7 +28,6 @@ def generate_from_json(filepath: str) -> Dict[str, List[Tuple[str, str]]]:
         
         task_pairs = []
         
-        # Cross product of E_t and T_t
         for entity in entities:
             for template in templates:
                 t_q = template["T_Q"]
@@ -62,16 +42,26 @@ def generate_from_json(filepath: str) -> Dict[str, List[Tuple[str, str]]]:
     return all_tasks_data
 
 if __name__ == "__main__":
-    # Ensure tasks_data.json is in the same directory, or provide the full path
+    input_filename = 'tasks_data.json'
+    output_filename = 'qa_dataset.txt'
+    
     try:
-        generated_data = generate_from_json('tasks_data.json')
+        # 1. Generate the data
+        generated_data = generate_from_json(input_filename)
         
-        for task_name, qa_pairs in generated_data.items():
-            print(f"--- {task_name.upper()} ---")
-            for idx, (q, a) in enumerate(qa_pairs, 1):
-                print(f"Pair {idx}:")
-                print(f"  q = {q}")
-                print(f"  a = {a}\n")
+        # 2. Write it to a text file
+        with open(output_filename, 'w', encoding='utf-8') as out_file:
+            total_pairs = 0
+            for task_name, qa_pairs in generated_data.items():
+                out_file.write(f"--- {task_name.upper()} ---\n")
+                
+                for q, a in qa_pairs:
+                    out_file.write(f"Q: {q}\n")
+                    out_file.write(f"A: {a}\n\n")
+                    total_pairs += 1
+                    
+        print(f"Success! Generated {total_pairs} QA pairs.")
+        print(f"Saved to: {output_filename}")
                 
     except FileNotFoundError:
-        print("Error: Could not find 'tasks_data.json'. Please ensure the file exists.")
+        print(f"Error: Could not find '{input_filename}'. Please ensure both files are in the same folder.")
