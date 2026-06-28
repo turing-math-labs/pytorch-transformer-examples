@@ -11,6 +11,7 @@ import data
 from model import PositionalEncoding, RNNModel, TransformerModel
 
 parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
+parser.add_argument('--qa', action='store_true', help='Use QA format dataset')
 parser.add_argument('--data', type=str, default='./data/wikitext-2',
                     help='location of the data corpus')
 parser.add_argument('--model', type=str, default='LSTM',
@@ -68,7 +69,7 @@ print("Using device:", device)
 # Load data
 ###############################################################################
 
-corpus = data.Corpus(args.data)
+corpus = data.Corpus(args.data, qa_format=args.qa)
 
 # Starting from sequential data, batchify arranges the dataset into columns.
 # For instance, with the alphabet as the sequence and batch size 4, we'd get
