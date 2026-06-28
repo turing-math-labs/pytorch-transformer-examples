@@ -1,43 +1,3655 @@
 {
   "tasks": [
     {
-      "name": "Biography Task",
-      "entities": [
-        {
-          "name": "Albert Einstein",
-          "birth_date": "14 March 1879",
-          "birth_place": "Ulm"
-        },
-        {
-          "name": "Marie Curie",
-          "birth_date": "7 November 1867",
-          "birth_place": "Warsaw"
-        }
-      ],
+      "name": "General Reference - Helpful Tools",
       "templates": [
         {
-          "T_Q": "When and where was X born?",
-          "T_A": "X was born on X.birth_date in X.birth_place."
+          "T_Q": "What is a X used for?",
+          "T_A": "A X is used to X.purpose."
         },
         {
-          "T_Q": "Where is X from?",
-          "T_A": "X was born in X.birth_place."
+          "T_Q": "Where can you usually find a X?",
+          "T_A": "You can usually find a X in X.found_in."
+        },
+        {
+          "T_Q": "Can you describe what a X looks like?",
+          "T_A": "A X looks like X.looks_like."
+        },
+        {
+          "T_Q": "If I need to X.purpose, what tool should I use?",
+          "T_A": "You should use a X."
+        },
+        {
+          "T_Q": "Is a X helpful in X.found_in?",
+          "T_A": "Yes, a X is a very helpful tool to have in X.found_in."
+        },
+        {
+          "T_Q": "What does a X look like?",
+          "T_A": "It looks like X.looks_like."
+        },
+        {
+          "T_Q": "Why would someone need a X?",
+          "T_A": "Someone would need it to X.purpose."
+        },
+        {
+          "T_Q": "Name a tool found in X.found_in.",
+          "T_A": "A X is often found there."
+        },
+        {
+          "T_Q": "If you see something that looks like X.looks_like, what is it?",
+          "T_A": "That is likely a X."
+        },
+        {
+          "T_Q": "What is the primary purpose of a X?",
+          "T_A": "Its primary purpose is to X.purpose."
+        }
+      ],
+      "entities": [
+        {
+          "name": "dictionary",
+          "purpose": "look up how to spell words and what they mean",
+          "looks_like": "a very thick book with words in ABC order",
+          "found_in": "a library or a classroom"
+        },
+        {
+          "name": "calendar",
+          "purpose": "check the date, month, and year",
+          "looks_like": "a paper with boxes for days and weeks",
+          "found_in": "hanging on a wall"
+        },
+        {
+          "name": "ruler",
+          "purpose": "measure how long something is",
+          "looks_like": "a straight plastic or wooden stick with numbers",
+          "found_in": "a pencil case"
+        },
+        {
+          "name": "amazing dictionary version 3",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "advanced dictionary version 4",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "special dictionary version 5",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "helpful dictionary version 6",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "rare dictionary version 7",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "everyday dictionary version 8",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "unique dictionary version 9",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "advanced dictionary version 10",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "basic dictionary version 11",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "complex dictionary version 12",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "new dictionary version 13",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "helpful dictionary version 14",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "basic dictionary version 15",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "common dictionary version 16",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "unique dictionary version 17",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "advanced dictionary version 18",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "simple dictionary version 19",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "common dictionary version 20",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "common dictionary version 21",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "new dictionary version 22",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "common dictionary version 23",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "unique dictionary version 24",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "common dictionary version 25",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "unique dictionary version 26",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "helpful dictionary version 27",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "advanced dictionary version 28",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "simple dictionary version 29",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a paper with boxes for days and weeks",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "new dictionary version 30",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "amazing dictionary version 31",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "basic dictionary version 32",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "special dictionary version 33",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a straight plastic or wooden stick with numbers",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "new dictionary version 34",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of hanging on a wall"
+        },
+        {
+          "name": "special dictionary version 35",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "basic dictionary version 36",
+          "purpose": "a variation of check the date, month, and year",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
+        },
+        {
+          "name": "unique dictionary version 37",
+          "purpose": "a variation of measure how long something is",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a library or a classroom"
+        },
+        {
+          "name": "common dictionary version 38",
+          "purpose": "a variation of look up how to spell words and what they mean",
+          "looks_like": "a variation of a very thick book with words in ABC order",
+          "found_in": "a variation of a pencil case"
         }
       ]
     },
     {
-      "name": "Element Task",
-      "entities": [
-        {
-          "name": "Gold",
-          "symbol": "Au",
-          "atomic_number": "79"
-        }
-      ],
+      "name": "Culture and the Arts - Making Art",
       "templates": [
         {
-          "T_Q": "What is the atomic number and symbol of X?",
-          "T_A": "The atomic number of X is X.atomic_number and its symbol is X.symbol."
+          "T_Q": "What tools do you need for X?",
+          "T_A": "To do X, you usually need X.tool."
+        },
+        {
+          "T_Q": "Where do you put your artwork when you are X?",
+          "T_A": "When X, you usually work on X.canvas."
+        },
+        {
+          "T_Q": "What does X feel like you are doing?",
+          "T_A": "X feels like X.action."
+        },
+        {
+          "T_Q": "Can you use X.tool for X?",
+          "T_A": "Yes, X.tool is exactly what you need for X."
+        },
+        {
+          "T_Q": "If a student is X.action, what kind of art are they making?",
+          "T_A": "They are making art by X."
+        },
+        {
+          "T_Q": "What is the action involved in X?",
+          "T_A": "It involves X.action."
+        },
+        {
+          "T_Q": "Do you need X.tool to start X?",
+          "T_A": "Yes, you will need X.tool."
+        },
+        {
+          "T_Q": "What surface is used for X?",
+          "T_A": "You typically use X.canvas."
+        },
+        {
+          "T_Q": "Describe the process of X.",
+          "T_A": "The process feels like X.action."
+        },
+        {
+          "T_Q": "Is X.canvas required for X?",
+          "T_A": "Yes, it is often done on X.canvas."
+        }
+      ],
+      "entities": [
+        {
+          "name": "painting",
+          "tool": "a brush and colors",
+          "canvas": "paper or canvas",
+          "action": "sweeping colors across a page"
+        },
+        {
+          "name": "sculpting",
+          "tool": "clay or play-dough",
+          "canvas": "a table or a wheel",
+          "action": "shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 2",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "amazing painting version 3",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "simple painting version 4",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "complex painting version 5",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "helpful painting version 6",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 7",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "amazing painting version 8",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 9",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "advanced painting version 10",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "helpful painting version 11",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "rare painting version 12",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 13",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "advanced painting version 14",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "simple painting version 15",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "basic painting version 16",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "amazing painting version 17",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "special painting version 18",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "simple painting version 19",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "everyday painting version 20",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "amazing painting version 21",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "amazing painting version 22",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "special painting version 23",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "new painting version 24",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "simple painting version 25",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "everyday painting version 26",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 27",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "special painting version 28",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 29",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "helpful painting version 30",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "complex painting version 31",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "helpful painting version 32",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "advanced painting version 33",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "everyday painting version 34",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "helpful painting version 35",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of sweeping colors across a page"
+        },
+        {
+          "name": "basic painting version 36",
+          "tool": "a variation of a brush and colors",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "rare painting version 37",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of a table or a wheel",
+          "action": "a variation of shaping things with your hands"
+        },
+        {
+          "name": "everyday painting version 38",
+          "tool": "a variation of clay or play-dough",
+          "canvas": "a variation of paper or canvas",
+          "action": "a variation of shaping things with your hands"
+        }
+      ]
+    },
+    {
+      "name": "Geography and Places - Nature Biomes",
+      "templates": [
+        {
+          "T_Q": "What is the main thing you see in the X?",
+          "T_A": "The main thing you see in the X is a lot of X.main_feature."
+        },
+        {
+          "T_Q": "What kind of animals live in the X?",
+          "T_A": "Animals like X.animal love to live in the X."
+        },
+        {
+          "T_Q": "What does the weather feel like in the X?",
+          "T_A": "The weather in the X is usually X.weather."
+        },
+        {
+          "T_Q": "Where can I find X.animal?",
+          "T_A": "You can find them living in the X."
+        },
+        {
+          "T_Q": "If I am surrounded by X.main_feature, where am I?",
+          "T_A": "You are most likely in the X."
+        },
+        {
+          "T_Q": "Is it true that the X has X.weather weather?",
+          "T_A": "Yes, the weather there is X.weather."
+        },
+        {
+          "T_Q": "Name an animal from the X.",
+          "T_A": "You might see X.animal there."
+        },
+        {
+          "T_Q": "What defines the landscape of the X?",
+          "T_A": "It is defined by X.main_feature."
+        },
+        {
+          "T_Q": "Would X.animal survive in the X?",
+          "T_A": "Yes, they thrive in the X."
+        },
+        {
+          "T_Q": "Describe the environment of the X.",
+          "T_A": "It has X.main_feature and the weather is X.weather."
+        }
+      ],
+      "entities": [
+        {
+          "name": "ocean",
+          "main_feature": "salty water",
+          "animal": "dolphins and sharks",
+          "weather": "breezy and wet"
+        },
+        {
+          "name": "desert",
+          "main_feature": "dry sand",
+          "animal": "camels and lizards",
+          "weather": "very hot and dry"
+        },
+        {
+          "name": "rainforest",
+          "main_feature": "tall green trees",
+          "animal": "monkeys and frogs",
+          "weather": "warm and rainy"
+        },
+        {
+          "name": "new ocean version 3",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "simple ocean version 4",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "everyday ocean version 5",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "unique ocean version 6",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "everyday ocean version 7",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "helpful ocean version 8",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "amazing ocean version 9",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "advanced ocean version 10",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "basic ocean version 11",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "basic ocean version 12",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "amazing ocean version 13",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "advanced ocean version 14",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "complex ocean version 15",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "complex ocean version 16",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "special ocean version 17",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "helpful ocean version 18",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "simple ocean version 19",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "amazing ocean version 20",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "helpful ocean version 21",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "unique ocean version 22",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "common ocean version 23",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "everyday ocean version 24",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "basic ocean version 25",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "special ocean version 26",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "simple ocean version 27",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "advanced ocean version 28",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "advanced ocean version 29",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "rare ocean version 30",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "basic ocean version 31",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "advanced ocean version 32",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "complex ocean version 33",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "unique ocean version 34",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of monkeys and frogs",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "everyday ocean version 35",
+          "main_feature": "a variation of tall green trees",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of warm and rainy"
+        },
+        {
+          "name": "unique ocean version 36",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of camels and lizards",
+          "weather": "a variation of breezy and wet"
+        },
+        {
+          "name": "unique ocean version 37",
+          "main_feature": "a variation of dry sand",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        },
+        {
+          "name": "new ocean version 38",
+          "main_feature": "a variation of salty water",
+          "animal": "a variation of dolphins and sharks",
+          "weather": "a variation of very hot and dry"
+        }
+      ]
+    },
+    {
+      "name": "Health and Fitness - Healthy Habits",
+      "templates": [
+        {
+          "T_Q": "Why is X so good for you?",
+          "T_A": "X is good for you because it X.benefit."
+        },
+        {
+          "T_Q": "How often should you be X?",
+          "T_A": "You should be X X.frequency."
+        },
+        {
+          "T_Q": "What part of you does X help the most?",
+          "T_A": "X is very helpful for X.body_part."
+        },
+        {
+          "T_Q": "Does X help X.body_part?",
+          "T_A": "Yes, X is a great way to take care of X.body_part."
+        },
+        {
+          "T_Q": "What is the best way to make sure it X.benefit?",
+          "T_A": "The best way is by X X.frequency."
+        },
+        {
+          "T_Q": "When is the best time for X?",
+          "T_A": "It is best to do it X.frequency."
+        },
+        {
+          "T_Q": "How does X affect X.body_part?",
+          "T_A": "It helps by making sure it X.benefit."
+        },
+        {
+          "T_Q": "What habit keeps X.body_part healthy?",
+          "T_A": "The habit of X keeps it healthy."
+        },
+        {
+          "T_Q": "What is the main benefit of X?",
+          "T_A": "The main benefit is that it X.benefit."
+        },
+        {
+          "T_Q": "Should I practice X X.frequency?",
+          "T_A": "Yes, doing it X.frequency is highly recommended."
+        }
+      ],
+      "entities": [
+        {
+          "name": "drinking water",
+          "benefit": "keeps your body hydrated",
+          "frequency": "every day, especially when playing",
+          "body_part": "your whole body"
+        },
+        {
+          "name": "brushing teeth",
+          "benefit": "keeps away sugar bugs and cavities",
+          "frequency": "every morning and every night",
+          "body_part": "your smile"
+        },
+        {
+          "name": "everyday drinking water version 2",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "common drinking water version 3",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "special drinking water version 4",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "helpful drinking water version 5",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "common drinking water version 6",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "new drinking water version 7",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "complex drinking water version 8",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "advanced drinking water version 9",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "simple drinking water version 10",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "common drinking water version 11",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "new drinking water version 12",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "rare drinking water version 13",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "simple drinking water version 14",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "unique drinking water version 15",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "basic drinking water version 16",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "new drinking water version 17",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "new drinking water version 18",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "helpful drinking water version 19",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "simple drinking water version 20",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "amazing drinking water version 21",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "everyday drinking water version 22",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "everyday drinking water version 23",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "complex drinking water version 24",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "common drinking water version 25",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "advanced drinking water version 26",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "complex drinking water version 27",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "everyday drinking water version 28",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "helpful drinking water version 29",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "rare drinking water version 30",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "advanced drinking water version 31",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "simple drinking water version 32",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "simple drinking water version 33",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "basic drinking water version 34",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "simple drinking water version 35",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "advanced drinking water version 36",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your smile"
+        },
+        {
+          "name": "special drinking water version 37",
+          "benefit": "a variation of keeps your body hydrated",
+          "frequency": "a variation of every morning and every night",
+          "body_part": "a variation of your whole body"
+        },
+        {
+          "name": "new drinking water version 38",
+          "benefit": "a variation of keeps away sugar bugs and cavities",
+          "frequency": "a variation of every day, especially when playing",
+          "body_part": "a variation of your smile"
+        }
+      ]
+    },
+    {
+      "name": "History and Events - Great Inventions",
+      "templates": [
+        {
+          "T_Q": "Who helped invent the X?",
+          "T_A": "The X was invented by X.inventor."
+        },
+        {
+          "T_Q": "How did the X change the world?",
+          "T_A": "The X changed the world by X.changed_the_world_by."
+        },
+        {
+          "T_Q": "What did the very first X look like?",
+          "T_A": "A long time ago, the X X.old_version."
+        },
+        {
+          "T_Q": "Did X.inventor create a way for X.changed_the_world_by?",
+          "T_A": "Yes, they did that by inventing the X."
+        },
+        {
+          "T_Q": "What was the problem with the early X?",
+          "T_A": "It was different because it X.old_version."
+        },
+        {
+          "T_Q": "Who is known for the X?",
+          "T_A": "That would be X.inventor."
+        },
+        {
+          "T_Q": "What impact did the X have?",
+          "T_A": "It impacted society by X.changed_the_world_by."
+        },
+        {
+          "T_Q": "Describe the historical version of the X.",
+          "T_A": "Historically, it X.old_version."
+        },
+        {
+          "T_Q": "Why is X.inventor famous?",
+          "T_A": "They are famous for creating the X."
+        },
+        {
+          "T_Q": "How was the original X different from today?",
+          "T_A": "The original X X.old_version."
+        }
+      ],
+      "entities": [
+        {
+          "name": "telephone",
+          "inventor": "Alexander Graham Bell",
+          "changed_the_world_by": "letting people talk from far away",
+          "old_version": "had a spinning dial and a cord"
+        },
+        {
+          "name": "airplane",
+          "inventor": "the Wright Brothers",
+          "changed_the_world_by": "letting people fly through the sky",
+          "old_version": "was made of wood and fabric"
+        },
+        {
+          "name": "special telephone version 2",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "special telephone version 3",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "simple telephone version 4",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "everyday telephone version 5",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "unique telephone version 6",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "unique telephone version 7",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "rare telephone version 8",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "everyday telephone version 9",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "advanced telephone version 10",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "common telephone version 11",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "rare telephone version 12",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "common telephone version 13",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "special telephone version 14",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "rare telephone version 15",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "advanced telephone version 16",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "amazing telephone version 17",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "special telephone version 18",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "new telephone version 19",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "basic telephone version 20",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "complex telephone version 21",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "complex telephone version 22",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "complex telephone version 23",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "common telephone version 24",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "special telephone version 25",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "advanced telephone version 26",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "rare telephone version 27",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "simple telephone version 28",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "complex telephone version 29",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "basic telephone version 30",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "unique telephone version 31",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "special telephone version 32",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "complex telephone version 33",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "unique telephone version 34",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "basic telephone version 35",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of had a spinning dial and a cord"
+        },
+        {
+          "name": "unique telephone version 36",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people fly through the sky",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "unique telephone version 37",
+          "inventor": "a variation of Alexander Graham Bell",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of was made of wood and fabric"
+        },
+        {
+          "name": "advanced telephone version 38",
+          "inventor": "a variation of the Wright Brothers",
+          "changed_the_world_by": "a variation of letting people talk from far away",
+          "old_version": "a variation of had a spinning dial and a cord"
+        }
+      ]
+    },
+    {
+      "name": "Human Activities - Fun Chores",
+      "templates": [
+        {
+          "T_Q": "What are you doing when you are X?",
+          "T_A": "When you are X, you are X.action."
+        },
+        {
+          "T_Q": "Where is the best place to do X?",
+          "T_A": "The best place for X is in X.location."
+        },
+        {
+          "T_Q": "What is the best part about X?",
+          "T_A": "The best reward for X is X.reward."
+        },
+        {
+          "T_Q": "If I am in X.location and X.action, what am I doing?",
+          "T_A": "You are X."
+        },
+        {
+          "T_Q": "Is X.reward the reason people like X?",
+          "T_A": "Yes, getting to enjoy X.reward makes X very fun."
+        },
+        {
+          "T_Q": "What chore happens in X.location?",
+          "T_A": "You can usually do X there."
+        },
+        {
+          "T_Q": "Describe the steps involved in X.",
+          "T_A": "It involves X.action."
+        },
+        {
+          "T_Q": "What is the outcome of X?",
+          "T_A": "The outcome is X.reward."
+        },
+        {
+          "T_Q": "Do you perform X in X.location?",
+          "T_A": "Yes, X.location is the perfect place for it."
+        },
+        {
+          "T_Q": "Why do people enjoy X?",
+          "T_A": "Because they look forward to X.reward."
+        }
+      ],
+      "entities": [
+        {
+          "name": "gardening",
+          "action": "planting seeds and watering flowers",
+          "location": "the backyard",
+          "reward": "watching beautiful plants grow"
+        },
+        {
+          "name": "baking",
+          "action": "mixing flour, sugar, and eggs",
+          "location": "the kitchen",
+          "reward": "eating a yummy treat"
+        },
+        {
+          "name": "new gardening version 2",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "advanced gardening version 3",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "new gardening version 4",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "rare gardening version 5",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "rare gardening version 6",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "unique gardening version 7",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "special gardening version 8",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "new gardening version 9",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "rare gardening version 10",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "basic gardening version 11",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "simple gardening version 12",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "amazing gardening version 13",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "unique gardening version 14",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "helpful gardening version 15",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "helpful gardening version 16",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "new gardening version 17",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "basic gardening version 18",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "advanced gardening version 19",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "amazing gardening version 20",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "amazing gardening version 21",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "simple gardening version 22",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "common gardening version 23",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "new gardening version 24",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "rare gardening version 25",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "special gardening version 26",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "basic gardening version 27",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "rare gardening version 28",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "simple gardening version 29",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "unique gardening version 30",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "everyday gardening version 31",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "everyday gardening version 32",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "new gardening version 33",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "simple gardening version 34",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "simple gardening version 35",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "amazing gardening version 36",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the kitchen",
+          "reward": "a variation of watching beautiful plants grow"
+        },
+        {
+          "name": "new gardening version 37",
+          "action": "a variation of mixing flour, sugar, and eggs",
+          "location": "a variation of the backyard",
+          "reward": "a variation of eating a yummy treat"
+        },
+        {
+          "name": "everyday gardening version 38",
+          "action": "a variation of planting seeds and watering flowers",
+          "location": "a variation of the backyard",
+          "reward": "a variation of watching beautiful plants grow"
+        }
+      ]
+    },
+    {
+      "name": "Mathematics and Logic - Basic Shapes",
+      "templates": [
+        {
+          "T_Q": "How many sides does a X have?",
+          "T_A": "A X has X.sides."
+        },
+        {
+          "T_Q": "Does a X have corners?",
+          "T_A": "Yes, it has X.corners."
+        },
+        {
+          "T_Q": "What is something in real life that looks like a X?",
+          "T_A": "Something like X.real_world_example looks like a X."
+        },
+        {
+          "T_Q": "If a shape has X.sides and X.corners, what is it?",
+          "T_A": "That shape is a X."
+        },
+        {
+          "T_Q": "Is X.real_world_example shaped like a X?",
+          "T_A": "Yes, that is a perfect example of a X."
+        },
+        {
+          "T_Q": "Describe the edges of a X.",
+          "T_A": "It has exactly X.sides."
+        },
+        {
+          "T_Q": "How many vertices or corners are on a X?",
+          "T_A": "It has X.corners."
+        },
+        {
+          "T_Q": "Can you give a real-world example of a X?",
+          "T_A": "Yes, X.real_world_example is a great example."
+        },
+        {
+          "T_Q": "What shape is X.real_world_example?",
+          "T_A": "It is typically shaped like a X."
+        },
+        {
+          "T_Q": "Are the sides and corners of a X related?",
+          "T_A": "Yes, it features X.sides and X.corners."
+        }
+      ],
+      "entities": [
+        {
+          "name": "square",
+          "sides": "four equal sides",
+          "corners": "four sharp corners",
+          "real_world_example": "a slice of sandwich cheese"
+        },
+        {
+          "name": "circle",
+          "sides": "zero straight sides",
+          "corners": "no corners at all",
+          "real_world_example": "a round pizza"
+        },
+        {
+          "name": "triangle",
+          "sides": "three sides",
+          "corners": "three pointy corners",
+          "real_world_example": "a slice of pie"
+        },
+        {
+          "name": "simple square version 3",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "special square version 4",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "everyday square version 5",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "common square version 6",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "common square version 7",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "special square version 8",
+          "sides": "a variation of three sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "common square version 9",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "new square version 10",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "common square version 11",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "amazing square version 12",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "basic square version 13",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "advanced square version 14",
+          "sides": "a variation of three sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "basic square version 15",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "new square version 16",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "new square version 17",
+          "sides": "a variation of three sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "advanced square version 18",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "common square version 19",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "complex square version 20",
+          "sides": "a variation of three sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "basic square version 21",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "complex square version 22",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "special square version 23",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "rare square version 24",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "new square version 25",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "basic square version 26",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "basic square version 27",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "amazing square version 28",
+          "sides": "a variation of three sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "helpful square version 29",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "special square version 30",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "new square version 31",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "complex square version 32",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "rare square version 33",
+          "sides": "a variation of three sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        },
+        {
+          "name": "special square version 34",
+          "sides": "a variation of zero straight sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "amazing square version 35",
+          "sides": "a variation of three sides",
+          "corners": "a variation of three pointy corners",
+          "real_world_example": "a variation of a slice of sandwich cheese"
+        },
+        {
+          "name": "simple square version 36",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "amazing square version 37",
+          "sides": "a variation of three sides",
+          "corners": "a variation of no corners at all",
+          "real_world_example": "a variation of a round pizza"
+        },
+        {
+          "name": "everyday square version 38",
+          "sides": "a variation of four equal sides",
+          "corners": "a variation of four sharp corners",
+          "real_world_example": "a variation of a slice of pie"
+        }
+      ]
+    },
+    {
+      "name": "Natural and Physical Sciences - Animal Classes",
+      "templates": [
+        {
+          "T_Q": "What does the skin of a X feel like?",
+          "T_A": "A X is usually covered in X.covering."
+        },
+        {
+          "T_Q": "How does a X have babies?",
+          "T_A": "A X has babies by X.birth."
+        },
+        {
+          "T_Q": "What is an example of a X?",
+          "T_A": "Animals like X.example are a type of X."
+        },
+        {
+          "T_Q": "If an animal has X.covering, is it a X?",
+          "T_A": "Yes, having X.covering means it is likely a X."
+        },
+        {
+          "T_Q": "Do X.example belong to the X family?",
+          "T_A": "Yes, they do!"
+        },
+        {
+          "T_Q": "What is unique about the birth process of a X?",
+          "T_A": "They reproduce by X.birth."
+        },
+        {
+          "T_Q": "Name some animals classified as X.",
+          "T_A": "Examples include X.example."
+        },
+        {
+          "T_Q": "What kind of body covering does a X have?",
+          "T_A": "They have X.covering."
+        },
+        {
+          "T_Q": "If a creature gives birth by X.birth, what could it be?",
+          "T_A": "It could very well be a X."
+        },
+        {
+          "T_Q": "Is X.covering a trait of X.example?",
+          "T_A": "Yes, because they are a X."
+        }
+      ],
+      "entities": [
+        {
+          "name": "mammal",
+          "covering": "hair or fur",
+          "birth": "having live babies",
+          "example": "dogs, cats, and humans"
+        },
+        {
+          "name": "reptile",
+          "covering": "dry scales",
+          "birth": "laying eggs",
+          "example": "snakes, turtles, and lizards"
+        },
+        {
+          "name": "basic mammal version 2",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "special mammal version 3",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "rare mammal version 4",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "unique mammal version 5",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "special mammal version 6",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "helpful mammal version 7",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "amazing mammal version 8",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "special mammal version 9",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "basic mammal version 10",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "new mammal version 11",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "unique mammal version 12",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "basic mammal version 13",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "new mammal version 14",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "helpful mammal version 15",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "amazing mammal version 16",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "amazing mammal version 17",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "new mammal version 18",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "complex mammal version 19",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "basic mammal version 20",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "simple mammal version 21",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "special mammal version 22",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "simple mammal version 23",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "unique mammal version 24",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "helpful mammal version 25",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "simple mammal version 26",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "simple mammal version 27",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "amazing mammal version 28",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "everyday mammal version 29",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "complex mammal version 30",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "amazing mammal version 31",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "rare mammal version 32",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "simple mammal version 33",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "unique mammal version 34",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "amazing mammal version 35",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        },
+        {
+          "name": "simple mammal version 36",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "special mammal version 37",
+          "covering": "a variation of hair or fur",
+          "birth": "a variation of laying eggs",
+          "example": "a variation of dogs, cats, and humans"
+        },
+        {
+          "name": "special mammal version 38",
+          "covering": "a variation of dry scales",
+          "birth": "a variation of having live babies",
+          "example": "a variation of snakes, turtles, and lizards"
+        }
+      ]
+    },
+    {
+      "name": "People and Self - Big Feelings",
+      "templates": [
+        {
+          "T_Q": "What does your face look like when you feel X?",
+          "T_A": "When you feel X, you usually have X.face."
+        },
+        {
+          "T_Q": "What do your body and hands do when you are full of X?",
+          "T_A": "You might find yourself X.action."
+        },
+        {
+          "T_Q": "What can cause a feeling of X?",
+          "T_A": "Things like X.cause can make you feel X."
+        },
+        {
+          "T_Q": "If I see someone with X.face, are they feeling X?",
+          "T_A": "Yes, X.face usually means they are full of X."
+        },
+        {
+          "T_Q": "Is X.action a normal thing to do when feeling X?",
+          "T_A": "Yes, doing that is a very normal part of X."
+        },
+        {
+          "T_Q": "How does X affect your facial expression?",
+          "T_A": "It often leads to X.face."
+        },
+        {
+          "T_Q": "What physical actions accompany X?",
+          "T_A": "People usually start X.action."
+        },
+        {
+          "T_Q": "Why might someone experience X?",
+          "T_A": "They might experience it because of X.cause."
+        },
+        {
+          "T_Q": "Is X.cause a common trigger for X?",
+          "T_A": "Yes, that frequently causes X."
+        },
+        {
+          "T_Q": "What does X look like from the outside?",
+          "T_A": "It looks like X.face and X.action."
+        }
+      ],
+      "entities": [
+        {
+          "name": "happiness",
+          "face": "a big smile",
+          "action": "laughing and jumping",
+          "cause": "playing with friends or eating a treat"
+        },
+        {
+          "name": "sadness",
+          "face": "a frown and maybe tears",
+          "action": "wanting a hug or quiet time",
+          "cause": "dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "complex happiness version 2",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 3",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "helpful happiness version 4",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "new happiness version 5",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "simple happiness version 6",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 7",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "unique happiness version 8",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "complex happiness version 9",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "common happiness version 10",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "advanced happiness version 11",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 12",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "rare happiness version 13",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "common happiness version 14",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "rare happiness version 15",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 16",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "special happiness version 17",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "special happiness version 18",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "helpful happiness version 19",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "complex happiness version 20",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "new happiness version 21",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "basic happiness version 22",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "common happiness version 23",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "everyday happiness version 24",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 25",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "unique happiness version 26",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "special happiness version 27",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "new happiness version 28",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "basic happiness version 29",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "simple happiness version 30",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "common happiness version 31",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "common happiness version 32",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        },
+        {
+          "name": "everyday happiness version 33",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "common happiness version 34",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "common happiness version 35",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "new happiness version 36",
+          "face": "a variation of a frown and maybe tears",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "special happiness version 37",
+          "face": "a variation of a big smile",
+          "action": "a variation of laughing and jumping",
+          "cause": "a variation of playing with friends or eating a treat"
+        },
+        {
+          "name": "basic happiness version 38",
+          "face": "a variation of a big smile",
+          "action": "a variation of wanting a hug or quiet time",
+          "cause": "a variation of dropping an ice cream cone or missing someone"
+        }
+      ]
+    },
+    {
+      "name": "Philosophy and Thinking - Good Values",
+      "templates": [
+        {
+          "T_Q": "What is the meaning of X?",
+          "T_A": "X means X.meaning."
+        },
+        {
+          "T_Q": "What is the opposite of X?",
+          "T_A": "The opposite of X is X.opposite."
+        },
+        {
+          "T_Q": "How do you feel inside when you practice X?",
+          "T_A": "Practicing X makes you feel X.feeling."
+        },
+        {
+          "T_Q": "If I am X.meaning, am I practicing X?",
+          "T_A": "Yes, that is exactly what X is."
+        },
+        {
+          "T_Q": "Is X.opposite a good way to show X?",
+          "T_A": "No, because X.opposite is the exact opposite of X."
+        },
+        {
+          "T_Q": "Can you define the value of X?",
+          "T_A": "It is defined as X.meaning."
+        },
+        {
+          "T_Q": "What behavior contrasts with X?",
+          "T_A": "The contrasting behavior is X.opposite."
+        },
+        {
+          "T_Q": "What is the emotional result of X?",
+          "T_A": "The result is feeling X.feeling."
+        },
+        {
+          "T_Q": "Why is X considered a good value?",
+          "T_A": "Because it means X.meaning and makes you feel X.feeling."
+        },
+        {
+          "T_Q": "If someone does X.opposite, are they showing X?",
+          "T_A": "No, they are showing the opposite of X."
+        }
+      ],
+      "entities": [
+        {
+          "name": "honesty",
+          "meaning": "always telling the truth",
+          "opposite": "telling a lie",
+          "feeling": "proud and trustworthy"
+        },
+        {
+          "name": "sharing",
+          "meaning": "letting someone else play with your toys",
+          "opposite": "keeping everything for yourself",
+          "feeling": "friendly and kind"
+        },
+        {
+          "name": "simple honesty version 2",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "amazing honesty version 3",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "new honesty version 4",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "simple honesty version 5",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "common honesty version 6",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "everyday honesty version 7",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "advanced honesty version 8",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "unique honesty version 9",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "complex honesty version 10",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "special honesty version 11",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "simple honesty version 12",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "rare honesty version 13",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "rare honesty version 14",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "amazing honesty version 15",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "special honesty version 16",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "complex honesty version 17",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "unique honesty version 18",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "everyday honesty version 19",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "new honesty version 20",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "advanced honesty version 21",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "helpful honesty version 22",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "common honesty version 23",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "basic honesty version 24",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "basic honesty version 25",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "simple honesty version 26",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "common honesty version 27",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "complex honesty version 28",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "complex honesty version 29",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "basic honesty version 30",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "simple honesty version 31",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "complex honesty version 32",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "complex honesty version 33",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "helpful honesty version 34",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "new honesty version 35",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of friendly and kind"
+        },
+        {
+          "name": "unique honesty version 36",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "everyday honesty version 37",
+          "meaning": "a variation of letting someone else play with your toys",
+          "opposite": "a variation of keeping everything for yourself",
+          "feeling": "a variation of proud and trustworthy"
+        },
+        {
+          "name": "advanced honesty version 38",
+          "meaning": "a variation of always telling the truth",
+          "opposite": "a variation of telling a lie",
+          "feeling": "a variation of friendly and kind"
+        }
+      ]
+    },
+    {
+      "name": "Religion and Belief Systems - Global Holidays",
+      "templates": [
+        {
+          "T_Q": "What is a special symbol of X?",
+          "T_A": "During X, a special symbol is X.symbol."
+        },
+        {
+          "T_Q": "What time of year does X usually happen?",
+          "T_A": "X usually happens in the X.season."
+        },
+        {
+          "T_Q": "What is the special meaning behind X?",
+          "T_A": "The meaning of X is X.meaning."
+        },
+        {
+          "T_Q": "Do people celebrate X by X.symbol?",
+          "T_A": "Yes, X.symbol is a big part of celebrating X."
+        },
+        {
+          "T_Q": "If it is X.season, is it time for X?",
+          "T_A": "Yes, that is the right season for X."
+        },
+        {
+          "T_Q": "What does X represent?",
+          "T_A": "It represents X.meaning."
+        },
+        {
+          "T_Q": "When is X traditionally celebrated?",
+          "T_A": "It is traditionally celebrated in X.season."
+        },
+        {
+          "T_Q": "How is X visually represented?",
+          "T_A": "It is visually represented by X.symbol."
+        },
+        {
+          "T_Q": "Is X.meaning the core focus of X?",
+          "T_A": "Yes, that is the central theme of the holiday."
+        },
+        {
+          "T_Q": "During X.season, what holiday features X.symbol?",
+          "T_A": "That would be X."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Diwali",
+          "symbol": "lighting small clay lamps",
+          "season": "autumn",
+          "meaning": "light winning over darkness"
+        },
+        {
+          "name": "Lunar New Year",
+          "symbol": "red envelopes and dragon dances",
+          "season": "late winter or early spring",
+          "meaning": "wishing for good luck in the new year"
+        },
+        {
+          "name": "common Diwali version 2",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "advanced Diwali version 3",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "rare Diwali version 4",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "simple Diwali version 5",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "advanced Diwali version 6",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "special Diwali version 7",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "unique Diwali version 8",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "advanced Diwali version 9",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "helpful Diwali version 10",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "advanced Diwali version 11",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "rare Diwali version 12",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "basic Diwali version 13",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "new Diwali version 14",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "complex Diwali version 15",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "advanced Diwali version 16",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "everyday Diwali version 17",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "helpful Diwali version 18",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "unique Diwali version 19",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "new Diwali version 20",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "new Diwali version 21",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "simple Diwali version 22",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "common Diwali version 23",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "everyday Diwali version 24",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "complex Diwali version 25",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "everyday Diwali version 26",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "complex Diwali version 27",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "unique Diwali version 28",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "new Diwali version 29",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "amazing Diwali version 30",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "everyday Diwali version 31",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "helpful Diwali version 32",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "everyday Diwali version 33",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "helpful Diwali version 34",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "simple Diwali version 35",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of late winter or early spring",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "complex Diwali version 36",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        },
+        {
+          "name": "rare Diwali version 37",
+          "symbol": "a variation of lighting small clay lamps",
+          "season": "a variation of autumn",
+          "meaning": "a variation of light winning over darkness"
+        },
+        {
+          "name": "helpful Diwali version 38",
+          "symbol": "a variation of red envelopes and dragon dances",
+          "season": "a variation of autumn",
+          "meaning": "a variation of wishing for good luck in the new year"
+        }
+      ]
+    },
+    {
+      "name": "Society and Social Sciences - Community Helpers",
+      "templates": [
+        {
+          "T_Q": "What is the job of a X?",
+          "T_A": "A X works very hard to X.job."
+        },
+        {
+          "T_Q": "What kind of tool does a X use?",
+          "T_A": "A X uses X.tool to do their job."
+        },
+        {
+          "T_Q": "Where does a X usually go to work?",
+          "T_A": "A X usually works at X.workplace."
+        },
+        {
+          "T_Q": "If I need someone to X.job, who should I call?",
+          "T_A": "You should call a X."
+        },
+        {
+          "T_Q": "Will I find a X at X.workplace?",
+          "T_A": "Yes, X.workplace is exactly where a X works."
+        },
+        {
+          "T_Q": "What is the primary responsibility of a X?",
+          "T_A": "Their main responsibility is to X.job."
+        },
+        {
+          "T_Q": "What equipment is essential for a X?",
+          "T_A": "They rely on X.tool."
+        },
+        {
+          "T_Q": "Describe the workplace of a X.",
+          "T_A": "They typically operate in X.workplace."
+        },
+        {
+          "T_Q": "If there is an emergency requiring X.job, who responds?",
+          "T_A": "A X would respond."
+        },
+        {
+          "T_Q": "Do you need X.tool to work at X.workplace as a X?",
+          "T_A": "Yes, that tool is necessary for their job."
+        }
+      ],
+      "entities": [
+        {
+          "name": "doctor",
+          "job": "help sick people get better",
+          "tool": "a stethoscope to listen to your heart",
+          "workplace": "a hospital or a clinic"
+        },
+        {
+          "name": "firefighter",
+          "job": "put out dangerous fires",
+          "tool": "a big hose and a fire truck",
+          "workplace": "a fire station"
+        },
+        {
+          "name": "complex doctor version 2",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "rare doctor version 3",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "simple doctor version 4",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "basic doctor version 5",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "rare doctor version 6",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "amazing doctor version 7",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "helpful doctor version 8",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "rare doctor version 9",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "advanced doctor version 10",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "unique doctor version 11",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "advanced doctor version 12",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "common doctor version 13",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "everyday doctor version 14",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "new doctor version 15",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "new doctor version 16",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "unique doctor version 17",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "advanced doctor version 18",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "basic doctor version 19",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "special doctor version 20",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "everyday doctor version 21",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "rare doctor version 22",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "everyday doctor version 23",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "new doctor version 24",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "special doctor version 25",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "simple doctor version 26",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "unique doctor version 27",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "advanced doctor version 28",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "new doctor version 29",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "basic doctor version 30",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "new doctor version 31",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "common doctor version 32",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "basic doctor version 33",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "everyday doctor version 34",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "basic doctor version 35",
+          "job": "a variation of put out dangerous fires",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a fire station"
+        },
+        {
+          "name": "basic doctor version 36",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "rare doctor version 37",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a stethoscope to listen to your heart",
+          "workplace": "a variation of a hospital or a clinic"
+        },
+        {
+          "name": "simple doctor version 38",
+          "job": "a variation of help sick people get better",
+          "tool": "a variation of a big hose and a fire truck",
+          "workplace": "a variation of a hospital or a clinic"
+        }
+      ]
+    },
+    {
+      "name": "Technology and Applied Sciences - Everyday Gadgets",
+      "templates": [
+        {
+          "T_Q": "What powers a X?",
+          "T_A": "A X is powered by X.power."
+        },
+        {
+          "T_Q": "Why do we use a X in our house?",
+          "T_A": "We use it to X.purpose."
+        },
+        {
+          "T_Q": "Which room usually has a X?",
+          "T_A": "You will mostly find a X in X.room."
+        },
+        {
+          "T_Q": "If I want to X.purpose, should I use a X?",
+          "T_A": "Yes, a X is made specifically to X.purpose."
+        },
+        {
+          "T_Q": "Does a X need X.power to work in X.room?",
+          "T_A": "Yes, without X.power, the X will not turn on."
+        },
+        {
+          "T_Q": "How does a X get its energy?",
+          "T_A": "It gets its energy from X.power."
+        },
+        {
+          "T_Q": "What is the function of a X?",
+          "T_A": "Its function is to X.purpose."
+        },
+        {
+          "T_Q": "Where is a X usually located?",
+          "T_A": "It is usually located in X.room."
+        },
+        {
+          "T_Q": "Can I use X.power to run a X?",
+          "T_A": "Yes, that is exactly what it uses."
+        },
+        {
+          "T_Q": "Is X.room the best place for a device that is meant to X.purpose?",
+          "T_A": "Yes, which is why the X is kept there."
+        }
+      ],
+      "entities": [
+        {
+          "name": "refrigerator",
+          "power": "electricity from a wall plug",
+          "purpose": "keep your food cold so it does not spoil",
+          "room": "the kitchen"
+        },
+        {
+          "name": "television",
+          "power": "electricity and a remote control",
+          "purpose": "show moving pictures and cartoons",
+          "room": "the living room"
+        },
+        {
+          "name": "rare refrigerator version 2",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "new refrigerator version 3",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "everyday refrigerator version 4",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "simple refrigerator version 5",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "helpful refrigerator version 6",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "special refrigerator version 7",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "unique refrigerator version 8",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "rare refrigerator version 9",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "helpful refrigerator version 10",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "special refrigerator version 11",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "advanced refrigerator version 12",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "common refrigerator version 13",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "amazing refrigerator version 14",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "common refrigerator version 15",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "rare refrigerator version 16",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "basic refrigerator version 17",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "special refrigerator version 18",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "complex refrigerator version 19",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "common refrigerator version 20",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "simple refrigerator version 21",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "helpful refrigerator version 22",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "rare refrigerator version 23",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "special refrigerator version 24",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "rare refrigerator version 25",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "complex refrigerator version 26",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "amazing refrigerator version 27",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "simple refrigerator version 28",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "advanced refrigerator version 29",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "helpful refrigerator version 30",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "unique refrigerator version 31",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "basic refrigerator version 32",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "new refrigerator version 33",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "rare refrigerator version 34",
+          "power": "a variation of electricity and a remote control",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "unique refrigerator version 35",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "simple refrigerator version 36",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the kitchen"
+        },
+        {
+          "name": "common refrigerator version 37",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of keep your food cold so it does not spoil",
+          "room": "a variation of the living room"
+        },
+        {
+          "name": "helpful refrigerator version 38",
+          "power": "a variation of electricity from a wall plug",
+          "purpose": "a variation of show moving pictures and cartoons",
+          "room": "a variation of the living room"
         }
       ]
     }
